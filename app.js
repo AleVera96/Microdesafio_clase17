@@ -7,3 +7,5 @@ app.listen(3000,()=> console.log("Levantando server en 3000"));
 app.get("/",(req,res)=>{
     res.sendFile(path.join(__dirname , "/views/home.html"))
 })
+
+app.use(express.static(path.join(__dirname,"/public")))
