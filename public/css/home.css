@@ -33,12 +33,11 @@
 }
 .home__body{
     background-color: var(--Gris-claro);
-    width: 102%;
 }
 .home__header{
     background-color: var(--Amarillo);
     box-sizing: border-box;
-    width: 102%;
+    width: 100%;
     padding-bottom: 1%;
     padding-top: 5%;
 }
@@ -144,12 +143,8 @@
     background-color: white;
 }
 #home__banner{
-    box-sizing: border-box;
-    display: flex;
-    width: 105vw;
-    height: auto;
-    margin-left: -3%;
-
+    width: 100vw;
+    margin: auto;
 }
 .fa-solid.fa-credit-card{
     display: block;
@@ -329,20 +324,20 @@ main{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
     #home__banner{
-        width: 109vw;
-        margin-left: -2%;
+        width: 100%;
+        margin: auto;
     }
     .home__articles__p3{
         padding:0px 15px 15px 15px;
         display: inline;
     }
     #section1{
-        width: 110vw;
+        width: 100vw;
         margin-top: -3vw; 
     }
     .home__compra{
         font-size: var(--tamano-cuerpo-texto);
-        width: 41vw;
+        width: 35vw;
         margin-top: 7vw;
 
     }    
@@ -406,6 +401,9 @@ main{
   }
   main{
     display:contents;
+  }
+  .main__forms {
+    display:flex;
   }
   main h2{
     text-align: center;
