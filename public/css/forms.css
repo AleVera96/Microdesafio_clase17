@@ -23,11 +23,12 @@
 .main__forms{
     background-color: var(--Gris-claro);
     padding:10%;
+    margin: auto;
 }
 main input {
     width: 90%;
     outline: none;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
     padding: 0.5em;
     border-radius: 0.3em;
     border: none;
@@ -39,7 +40,10 @@ main input {
 }
 .input__cat{
     width: auto;
-    margin-left: 6%;
+    margin: 0.9em;
+}
+main form{
+    margin:auto;
 }
 
 .main__forms button{
@@ -59,5 +63,8 @@ main input {
     }
     main form{
         width:70%;
+    }
+    .main__forms{
+        padding:5%;
     }
 }

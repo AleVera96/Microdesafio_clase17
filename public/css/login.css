@@ -45,6 +45,8 @@
 }
 .login__form{
     width: 70%;
+    margin: auto;
+
 }
 .main__login__button a{
     color:white}
