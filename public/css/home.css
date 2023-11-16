@@ -146,33 +146,18 @@
     width: 100vw;
     margin: auto;
 }
-.fa-solid.fa-credit-card{
+.fa-solid.fa-user-shield , .fa-solid.fa-gift , .fa-solid.fa-credit-card{
     display: block;
     color: var(--Celeste);
     position: relative;
     box-sizing: border-box;
-  
-    padding-top: 10vw;
+    padding-top: 10%;
     font-size: 2em;
+    transition: color 0.5s;
 }
-.fa-solid.fa-gift{
-    display: block;
-    color: var(--Celeste);
-    position: relative;
-    box-sizing: border-box;
-  
-    padding-top: 10vw;
-    font-size: 2em;
 
-}
-.fa-solid.fa-user-shield{
-    display: block;
-    color: var(--Celeste);
-    position: relative;
-    box-sizing: border-box;
-    
-    padding-top: 10vw;
-    font-size: 2em;
+.fa-solid.fa-user-shield:hover , .fa-solid.fa-gift:hover , .fa-solid.fa-credit-card:hover {
+     color : #0022AA;
 }
 #home__cpr{
     display: flex;
@@ -227,6 +212,7 @@ main section{
     color: var(--Gris-oscuro);
     padding: 15px 15px;
     
+    
 }
 
 main article{
@@ -249,7 +235,10 @@ main article{
     right: 5%;
     top: -20%;
     padding: 2%;
+    transition:transform 0.5s ;
 }
+.fa-solid.fa-truck:hover{
+transform: rotate(-90deg);}
 
 #home__section_1{
     width: 90%;
@@ -274,6 +263,9 @@ main article{
     }
    main article{
     width: 45%;
+    transition: box-shadow 0.5s;
+   }
+   main article:hover{
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
    }
    main section{
@@ -305,9 +297,15 @@ main article{
         margin: auto;
     }
     .home__articles__p3{
+        opacity: 0;
         padding:0px 15px 15px 15px;
         max-height: 36px;
+        transition: opacity 0.3s ;
     }
+    .home__articles__p3:hover{
+        opacity: 1;
+    }
+    
     #section1{
         width: 100vw;
         margin-top: -3vw; 
@@ -346,7 +344,24 @@ main article{
 }
 
 @media (min-width:1024px){
-   
+    #home__cpr {
+        width: 100%;
+        display: flex;
+        color: var(--Gris-oscuro);
+    }
+
+    .home__footer{
+        flex-wrap: wrap;
+        display: flex;
+        margin: auto;
+        justify-content: space-around;
+    }
+    .home__footer div{
+           display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: 33%;
+    }
 
     .home__ul1{
         margin-left: 2vw;

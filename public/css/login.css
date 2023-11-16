@@ -42,7 +42,10 @@
     font-family: roboto;
     border-radius: 0.6em;
     font-size: 18px;
+    transition: background-color 0.5s;
 }
+.main__login__button:hover{
+    background-color: #0022AA;}
 .login__form{
     width: 70%;
     margin: auto;
